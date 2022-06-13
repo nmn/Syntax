@@ -12,8 +12,7 @@ let package = Package(
     ],
     targets: [
         .target(name: "Syntax",
-                dependencies: ["SyntaxTree"],
-                exclude: ["FunctionBuilder/ParserBuilder.swift.gyb"]),
+                dependencies: ["SyntaxTree"]),
 
         .testTarget(name: "SyntaxTests",
                     dependencies: ["Syntax"]),
